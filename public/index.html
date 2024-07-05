@@ -30,6 +30,17 @@
     #video {
       margin-top: 20px;
     }
+    #transcription {
+      width: 80%;
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      height: 100px;
+      overflow-y: auto;
+    }
+    button {
+      margin-top: 10px;
+    }
   </style>
 </head>
 <body>
@@ -37,6 +48,9 @@
     <input type="text" placeholder="Enter your speech goals here..." style="width: 100%;">
   </div>
   <video id="video" width="320" height="240" autoplay></video>
+  <button id="start-recording">Start Recording</button>
+  <button id="stop-recording" disabled>Stop Recording</button>
+  <div id="transcription">Transcription will appear here...</div>
   <div id="recommendations">Recommendations will appear here...</div>
   <script src="script.js"></script>
 </body>
